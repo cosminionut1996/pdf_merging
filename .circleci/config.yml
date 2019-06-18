@@ -5,9 +5,9 @@ jobs:
   py3:
     docker:
       - image: circleci/python:3.6
+    working_directory: ~/pdf_merging
     steps:
-      - run: python -m unittest .
-
+      - run: python -m unittest tests/test_merge.py
 
 workflows:
   version: 2
