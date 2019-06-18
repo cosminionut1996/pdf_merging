@@ -10,3 +10,4 @@ hint: use mstamy2's PyPDF2
 import PyPDF2
 
 DESTINATION_MERGE = "merge/merge.pdf"
+PDFS_FOLDER = "pdfs"
