@@ -7,7 +7,7 @@ jobs:
       - image: circleci/python:3.6
     working_directory: ~/pdf_merging
     steps:
-      - run: python -m unittest pdf_merging/tests/test_merge.py
+      - run: python -m unittest
 
 workflows:
   version: 2
