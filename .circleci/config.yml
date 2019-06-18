@@ -6,7 +6,8 @@ jobs:
     docker:
       - image: circleci/python:3.6
     steps:
-      - run: python -m unittest tests
+      - checkout
+      - run: python -m unittest tests/test_merge.py
 
 workflows:
   version: 2
