@@ -13,4 +13,4 @@ workflows:
   version: 2
   build:
     jobs:
-      - welcome/py3
+      - py3
