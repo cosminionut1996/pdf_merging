@@ -13,10 +13,10 @@ class TestMerge(unittest.TestCase):
 
     def test_result(self):
         merge_result_location = 'merge/merge.pdf'
-        pdf = PdfFileReader(open(merge_result_location,'rb'))
-        pages = pdf.getNumPages()
-
-        self.assertEqual(pages, 66)
+        with open(merge_result_location,'rb') as handler:
+            pdf = PdfFileReader(handler)
+            pages = pdf.getNumPages()
+            self.assertEqual(pages, 66)
 
 if __name__ == "__main__":
     unittest.main()
