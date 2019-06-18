@@ -8,6 +8,7 @@ jobs:
     working_directory: ~/pdf_merging
     steps:
       - run: python -m unittest
+      - run: python ~/pdf_merging/pdf_merging/merge.py
 
 workflows:
   version: 2
