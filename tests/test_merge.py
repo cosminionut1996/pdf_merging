@@ -13,7 +13,7 @@ class TestMerge(unittest.TestCase):
     def test_result(self):
         merge_result_location = 'merge/merge.pdf'
         self.assertEqual(
-            "d41d8cd98f00b204e9800998ecf8427e",
+            "5d7d06a46c58a608877c5584472a7399",
             md5(merge_result_location)
         )
 
